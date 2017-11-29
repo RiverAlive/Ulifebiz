@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:fastScrollEnabled="false">
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/trl_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:padding="5dp"
+            android:id="@+id/ry_evas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_search"
+        android:layout_alignParentBottom="true"
+        android:imeOptions="actionSend"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:id="@+id/edt_reply"
+        android:textSize="@dimen/forth_font_size"
+        android:textColor="@color/main_font"
+        />
+</RelativeLayout>

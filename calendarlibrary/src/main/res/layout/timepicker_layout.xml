@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/time_scroller_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/toolbar_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picker_dialog_height">
+
+        <LinearLayout
+            android:id="@+id/linear_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <com.maning.calendarlibrary.widget.wheel.WheelView
+                        android:id="@+id/year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        />
+
+                    <com.maning.calendarlibrary.widget.wheel.WheelView
+                        android:id="@+id/month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <com.maning.calendarlibrary.widget.wheel.WheelView
+                        android:id="@+id/day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+</LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                        android:text="-"/>
+
+                    <com.maning.calendarlibrary.widget.wheel.WheelView
+                        android:id="@+id/hour"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+
+                    <com.maning.calendarlibrary.widget.wheel.WheelView
+                        android:id="@+id/minute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <com.maning.calendarlibrary.widget.wheel.WheelView
+                            android:id="@+id/finish_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"/>
+
+                        <com.maning.calendarlibrary.widget.wheel.WheelView
+                            android:id="@+id/finish_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            />
+
+                        <com.maning.calendarlibrary.widget.wheel.WheelView
+                            android:id="@+id/finish_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/date_wheel_bg"
+            android:contentDescription="@null" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+

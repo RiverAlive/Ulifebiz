@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/bg_order"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/third_font_size"
+                android:text="订单号  Order number："/>
+            <TextView
+                android:id="@+id/txt_orderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/login_mian"
+                android:textSize="@dimen/four_font_size"
+                android:text="12586558426"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:padding="10dp"
+            android:src="@mipmap/img_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/adapter_order_child"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_app"/>
+
+</LinearLayout>

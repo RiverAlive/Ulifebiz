@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pr_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_app">
+
+        <com.butao.ulifebiz.view.RYScrollview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:background="@color/login_mian"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_orderNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:text="257"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/first_font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="完成订单\nCompletion of order"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/third_font_size" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_orderPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:text="257"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/first_font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="完成流水\nCompletion flow"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/third_font_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_neworder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_newOrderNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="暂无新订单"
+                                android:textColor="@color/font_main"
+                                android:textSize="@dimen/third_font_size" />
+
+                            <ImageView
+                                android:id="@+id/img_neworder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@mipmap/img_down" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="beforeDescendants"
+                            android:fastScrollEnabled="false">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/ry_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_haveorder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_haveOrderNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="已接订单"
+                                android:textColor="@color/font_main"
+                                android:textSize="@dimen/third_font_size" />
+
+                            <ImageView
+                                android:id="@+id/img_haveorder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@mipmap/img_down" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="beforeDescendants"
+                            android:fastScrollEnabled="false">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/ry_haveorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_situation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="10dp"
+                            android:text="营业情况\nBusiness Situation"
+                            android:textColor="@color/font_main"
+                            android:textSize="@dimen/third_font_size" />
+
+                        <TextView
+                            android:id="@+id/txt_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/img_right"
+                            android:padding="10dp"
+                            android:text="正在营业"
+                            android:textColor="@color/font_blue"
+                            android:textSize="@dimen/second_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_order_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="10dp"
+                            android:text="订单提醒\nOrder reminder"
+                            android:textColor="@color/font_main"
+                            android:textSize="@dimen/third_font_size" />
+
+                        <TextView
+                            android:id="@+id/txt_warn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/img_right"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="@color/font_message"
+                            android:textSize="@dimen/second_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_brief"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:lineSpacingExtra="5dp"
+                                android:padding="10dp"
+                                android:text="营业简报\nBusiness brief"
+                                android:textColor="@color/font_main"
+                                android:textSize="@dimen/third_font_size" />
+
+                            <ImageView
+                                android:id="@+id/img_brief"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@mipmap/img_down" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_brief_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/bg_order"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="10px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/login_mian" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/txt_brief_orderNum"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="6dp"
+                                            android:text="257"
+                                            android:textColor="@color/login_mian"
+                                            android:textSize="@dimen/first_font_size" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="2"
+                                            android:text="完成订单\nCompletion of order"
+                                            android:textColor="@color/font_content"
+                                            android:textSize="@dimen/forth_font_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/txt_brief_orderPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="6dp"
+                                            android:text="257"
+                                            android:textColor="@color/login_mian"
+                                            android:textSize="@dimen/first_font_size" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="2"
+                                            android:text="完成流水\nCompletion flow"
+                                            android:textColor="@color/font_content"
+                                            android:textSize="@dimen/forth_font_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/txt_oldCustomer"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="6dp"
+                                            android:text="257"
+                                            android:textColor="@color/login_mian"
+                                            android:textSize="@dimen/first_font_size" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="2"
+                                            android:text="老顾客\nOld customer"
+                                            android:textColor="@color/font_content"
+                                            android:textSize="@dimen/forth_font_size" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <View
+                                        android:layout_width="10px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/login_mian" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="5dp">
+
+                                        <TextView
+                                            android:id="@+id/txt_newCustomer"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="6dp"
+                                            android:text="257"
+                                            android:textColor="@color/login_mian"
+                                            android:textSize="@dimen/first_font_size" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="2"
+                                            android:text="新顾客\nNew customer"
+                                            android:textColor="@color/font_content"
+                                            android:textSize="@dimen/forth_font_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingBottom="5dp">
+
+                                        <TextView
+                                            android:id="@+id/txt_average"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="6dp"
+                                            android:text="257"
+                                            android:textColor="@color/login_mian"
+                                            android:textSize="@dimen/first_font_size" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="2"
+                                            android:text="订单均额\nOrders average"
+                                            android:textColor="@color/font_content"
+                                            android:textSize="@dimen/forth_font_size" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.butao.ulifebiz.view.RYScrollview>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

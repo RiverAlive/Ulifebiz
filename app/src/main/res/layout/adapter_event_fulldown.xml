@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<TextView
+    android:id="@+id/txt_full_down"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="满50减20"
+    android:textColor="@color/font_main2"
+    android:textSize="@dimen/third_font_size"
+    android:padding="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_app"/>
+
+</LinearLayout>

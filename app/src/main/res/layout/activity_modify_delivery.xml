@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+    <include
+        layout="@layout/app_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送费 Delivery fee"
+            android:padding="5dp"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/four_font_size"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_soft"/>
+        <EditText
+            android:id="@+id/edt_deliveryfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:hint="配送费 Delivery fee"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/third_font_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="起送价 Sort price"
+            android:padding="5dp"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/four_font_size"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_soft"/>
+        <EditText
+            android:id="@+id/edt_sortprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:hint="起送价 Sort price"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/third_font_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送时长 Delivery time"
+            android:padding="5dp"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/four_font_size"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_soft"/>
+        <EditText
+            android:id="@+id/edt_deliverytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:hint="配送时长 Delivery time"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/third_font_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送范围 Distribution scope"
+            android:padding="5dp"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/four_font_size"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_soft"/>
+        <EditText
+            android:id="@+id/edt_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:hint="配送范围 Distribution scope"
+            android:textColor="@color/font_main_50"
+            android:textSize="@dimen/third_font_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:text="  保存  "
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/second_font_size"
+        android:background="@drawable/bg_chagepwd_button"/>
+</LinearLayout>

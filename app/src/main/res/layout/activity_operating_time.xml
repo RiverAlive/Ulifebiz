@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_add_time"
+        android:orientation="vertical">
+        <include
+            layout="@layout/app_title"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:fastScrollEnabled="false">
+            <android.support.v7.widget.RecyclerView
+                android:padding="10dp"
+                android:id="@+id/ry_weeks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_btn"
+        android:text="新建营业时间"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

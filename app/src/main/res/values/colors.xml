@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="default_bg">#80000000</color>
+    <color name="app_bg">#834f9c</color>
+    <!-- 字体黑色-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 老板首页标题颜色-->
+    <color name="boss_title">#834f9c</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 字体黑色-->
+    <color name="font_bcolor">#3a3a3a</color>
+    <!-- 主要字体颜色-->
+    <color name="main_font">#333333</color>
+    <!-- 内容字体颜色-->
+    <color name="content_font">#666666</color>
+    <!-- 辅助字体颜色-->
+    <color name="auxiliary_font">#999999</color>
+    <!-- 主要字体颜色-->
+    <color name="font_main">#161616</color>
+    <color name="font_main2">#2e2e2e</color>
+    <color name="font_content">#aaa7a6</color>
+    <color name="font_my">#a1a0a0</color>
+    <color name="font_main_50">#505050</color>
+    <color name="font_content_50">#a1a0a0</color>
+    <color name="font_red">#c10808</color>
+    <color name="font_message">#d01243</color>
+    <color name="font_blue">#339933</color>
+    <!-- 使用帮助颜色-->
+    <color name="use_help">#7f7f7f</color>
+    <!-- 品牌入驻颜色-->
+    <color name="login_brand">#834f9c</color>
+    <!-- 客服电话颜色-->
+    <color name="login_phone">#b767d1</color>
+    <!-- 体验账号细线颜色-->
+    <color name="taste_line">#f2f2f2</color>
+    <color name="line_titie">#f7b74e</color>
+    <color name="line_f1">#f1f3f4</color>
+     <color name="line_soft">#f0f5f7</color>
+    <!--登录文字颜色 -->
+    <color name="login_text">#aaa7a6</color>
+    <!--登录主题色 -->
+    <color name="login_mian">#f39801</color>
+    <color name="register_code">#fcc05d</color>
+    <!--登录主题色 -->
+    <color name="login_line">#fbe0b2</color>
+    <color name="soft_line">#cccccc</color>
+    <!-- 钢兰色 -->
+    <color name="royalblue">#4169E1</color>
+    <!-- 红紫色 -->
+    <color name="red">#FF0000</color>
+    <!-- 深白 -->
+    <color name="line_green">#E0EEEE</color>
+    <!-- 主背景颜色-->
+    <color name="bg_app">#e3e7ea</color>
+    <!-- 主背景颜色-->
+    <color name="bg_order">#f7f7f7</color>
+    <color name="bg_delete">#c03014</color>
+
+    <!--switch-->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+</resources>

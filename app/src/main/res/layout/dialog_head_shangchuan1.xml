@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_popup"
+    android:orientation="vertical"
+    android:background="@color/default_bg">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btn_zl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="拍照"
+            android:textColor="@color/main_font"
+            android:textSize="18dp"
+            android:background="@drawable/poput_window_background_top"/>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#dddddd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/btn_zl_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/popup_window_background_bottom"
+            android:padding="10dp"
+            android:text="从相册中选择"
+            android:textColor="@color/main_font"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_zl_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner_round_white"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/main_font"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

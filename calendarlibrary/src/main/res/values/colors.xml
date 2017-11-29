@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--星期的颜色值-->
+    <color name="mn_calendar_color_text_week">#5E5E5E</color>
+    <!--日历Item的阳历的颜色值-->
+    <color name="mn_calendar_color_text_solar">#282828</color>
+    <!--日历Item的阴历的颜色值-->
+    <color name="mn_calendar_color_text_lunar">#979797</color>
+    <!--日历今天圆形背景-->
+    <color name="mn_calendar_color_today_bg">#00FFFF</color>
+    <!--线-->
+    <color name="mn_calendar_color_line">#CCCCCC</color>
+    <!--白色-->
+    <color name="mn_calendar_color_white">#FFFFFF</color>
+    <!--不是当前月份的阳历的颜色-->
+    <color name="mn_calendar_color_other_month">#979797</color>
+
+
+    <!--白灰色-->
+    <color name="mn_calendar_color_gray_white">#dfdfdf</color>
+    <color name="timetimepicker_default_text_color">#999999</color>
+    <color name="toolbar_bg">#FBFBFB</color>
+    <color name="toolbar_text_cancel">#323232</color>
+    <color name="toolbar_text_ok">#39D167</color>
+    <color name="toolbar_line">#E7E7E7</color>
+    <color name="login_mian">#f39801</color>
+    <color name="register_code">#fcc05d</color>
+    <color name="item_selector_line">#C2C2C2</color>
+    <color name="item_selector_rect">#FFFFFF</color>
+
+    <color name="timepicker_dialog_bg">#80000000</color>
+    <color name="timepicker_line">#e8e8e8</color>
+</resources>

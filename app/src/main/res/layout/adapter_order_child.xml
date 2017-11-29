@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_child"
+    >
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_order"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/login_mian"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_order"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="订单名称\nDistribution list"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_orderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:text="配送地点\nDelivery location"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="订单总额\nTotal order"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_orderPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="付款状态\nPayment status"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_orderStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_blue"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="下单时间\norder time"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_orderTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="联系电话\nPhone number"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_sentTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+            <LinearLayout
+                android:id="@+id/ll_sendTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="送达时间\nDelivery Time"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_sendTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="排骨"
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="邮编\nPostcode"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="备注\nRemark"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/third_font_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/login_mian" />
+
+                <TextView
+                    android:id="@+id/txt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/font_main"
+                    android:textSize="@dimen/third_font_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_app" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_product_delete"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="取消"
+            android:textColor="@color/login_text"
+            android:textSize="@dimen/third_font_size" />
+        <TextView
+            android:id="@+id/txt_ignore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_product_delete"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="忽略"
+            android:visibility="gone"
+            android:textColor="@color/login_text"
+            android:textSize="@dimen/third_font_size" />
+        <TextView
+            android:id="@+id/txt_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_product_stop"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="接单"
+            android:textColor="@color/login_mian"
+            android:textSize="@dimen/third_font_size" />
+    </LinearLayout>
+</LinearLayout>

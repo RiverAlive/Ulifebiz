@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+    <include
+        layout="@layout/app_title"/>
+    <EditText
+        android:id="@+id/edt_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="自定义编辑你的反馈信息"
+       android:layout_gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:gravity="left|top"
+        android:minLines="5"
+        android:textSize="@dimen/third_font_size"
+        android:textColor="@color/font_content_50"
+        android:textColorHint="@color/font_content_50"
+        android:background="@drawable/login_taste"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:text="提交Submit"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/second_font_size"
+        android:background="@drawable/bg_chagepwd_button"/>
+</LinearLayout>
